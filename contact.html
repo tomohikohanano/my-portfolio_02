@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/ fb# prefix属性: http://ogp.me/ns/ prefix属性#">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/contact.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon-glasses_64.png">
+
+  <!-- OGP -->
+  <meta property="og:url" content="http://meganen.main.jp/my-portfolio_02/index.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="めがねんのポートフォリオ" />
+  <meta property="og:description" content="めがねんのポートフォリオです。２個目です。" />
+  <meta property="og:image" content="img/favicon-glasses_64.png" />
+
+  <!-- Font Awesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+  <!-- Font Awesome Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+
+  <title>めがねん's Portfolio</title>
+
+  <!-- ご希望の日時選択ライブラリここから -->
+  <link rel="stylesheet" href="css/jquery.datetimepicker.css" />
+  <!-- ご希望の日時選択ライブラリここまで -->
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color:#ffee00">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="main.html"><img src="img/favicon-glasses_64.png" alt="ロゴ"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="Navber" aria-expanded="false" aria-label="レスポンシブ・ナビゲーションバー">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="works.html">Works</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="about" class="container-fluid">
+    <h2 class="page-title">contact</h2>
+  </div>
+
+  <div class="contact-info">
+    <!-- お問合せフォームここから -->
+    <form action="php/mailform.php" method="post" id="mail_form">
+      <div>
+        <h3>お問合せフォーム</h3>
+        <hr>
+      </div>
+      <dt>お名前</dt>
+      <dd class="required"><input type="text" id="name_1" name="name_1" value="" placeholder="名字"/> <input type="text" id="name_2" name="name_2" value="" placeholder="名前"/></dd>
+      
+      <dt>ふりがな（自動入力）</dt>
+      <dd><input type="text" id="read_1" name="read_1" value="" /> <input type="text" id="read_2" name="read_2" value="" /></dd>
+      
+      <dt>メールアドレス</dt>
+      <dd class="required"><input type="email" id="mail_address" name="mail_address" value="" /></dd>
+      
+      <dt>メールアドレス(確認用)</dt>
+      <dd><input type="email" id="mail_address_confirm" name="mail_address_confirm" value="" /></dd>
+      <dt>ご希望内容</dt>
+      <dd>
+        <select id="product" name="product">
+          <option value="">選択してください</option>
+          <option value="lp">LP作成</option>
+          <option value="website">WEBサイト修正</option>
+          <option value="writing">ライティング案件</option>
+          <option value="others">その他</option>
+        </select>
+      </dd>
+        <dt>お問い合わせの内容</dt>
+      <dd class="required"><textarea id="contents" name="contents" cols="40" rows="5"></textarea></dd>
+      <p id="form_submit"><input type="button" id="form_submit_button" value="送信する" /></p>
+    </form><!-- お問合せフォームここまで -->
+
+    <!-- 地図ここから -->
+    <section id="location">
+      <div class="wrapper">
+        <div class="location-info">
+          <h3>出没地(※外出自粛中)</h3>
+          <hr>
+        </div>
+        <div class="location-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7753990750666!2d139.70129839296817!3d35.65790492107019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2z5riL6LC36aeF!5e0!3m2!1sja!2sjp!4v1586070028738!5m2!1sja!2sjp" width="800" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>        </div>
+      </div>
+    </section><!-- 地図ここまで -->
+  </div>
+
+  <footer>
+    <p>&copy;meganen2020</p>
+    <a href="https://twitter.com/iammeganen"><i class="fab fa-twitter-square faa-bounce animated"></i></a>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="js/mailform-js.php"></script>
+  <script src="script.js"></script>
+
+  <!-- フリガナ自動入力ライブラリここから -->
+  <script src="js/jquery.autoKana.js"></script>
+  <script>
+    (function( $ ) {
+      $.fn.autoKana( '#name_1', '#read_1', {
+        katakana: false
+      });
+      $.fn.autoKana( '#name_2', '#read_2', {
+        katakana: false
+      });
+    })( jQuery );
+  </script>
+  <!-- フリガナ自動入力ライブラリここまで -->
+
+
+  <!-- 住所自動入力ライブラリここから -->
+  <script src="js/ajaxzip3.js"></script>
+  <!-- 住所自動入力ライブラリここまで -->
+
+  <!-- ご希望の日時選択ライブラリここから -->
+  <script src="js/jquery.datetimepicker.js"></script>
+  <script>
+    (function( $ ) {
+      $( 'input#schedule' ).datetimepicker({
+        lang: 'ja'
+      });
+    })( jQuery );
+  </script>
+  <!-- ご希望の日時選択ライブラリここまで -->
+    
+</body>
+</html>

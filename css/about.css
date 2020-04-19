@@ -1,0 +1,250 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.min.css');
+@import url('https://use.fontawesome.com/releases/v5.0.8/js/all.js');
+
+html {
+  font-size: 100%;
+}
+body {
+  width: 100%;
+  position: relative;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  font-family: 'Gotu', sans-serif;
+  line-height: 1.7;
+  background: rgb(255, 238, 0);
+  color: #432;
+}
+a {
+  color: #432;
+  text-decoration: none;
+}
+img {
+  width: 80%;
+}
+.logo {
+  width: 50px;
+  margin-top: 14px;
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+.wrapper {
+  max-width: 1300px;
+  margin: 0 4%;
+  text-align: center;
+}
+.navbar {
+  padding: .8rem;
+}
+.navbar-nav li {
+  font-size: 1.5rem;
+  padding-right: 10px;
+}
+#about {
+  padding-top: 30px;
+  text-align: center;
+  color: black;
+  background-color: rgb(255, 238, 0);
+}
+.page-title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+}
+
+/* about.html */
+.my-photo {
+  height: 100%;
+  width: 100%;
+}
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top:2rem;
+}
+.lead01 {
+  font-size: 30px; 
+}
+.lead02 {
+  font-size: 15px;
+  text-align: justify;
+  padding-left: 4rem;
+ }
+
+ .fa-code {
+  color: #e54d26;
+}
+.fa-css3 {
+  color: #2163af;
+}
+.fa-js-square {
+  color: rgb(255, 153, 0);  
+}
+.fa-sass {
+  color:#BE4BDB;
+}
+.fa-php {
+  color: #F783AC;
+}
+.fa-git {
+  color: #E94E32;
+}
+.fa-code, .fa-bold, .fa-css3, .fa-js-square, .fa-sass, .fa-php, .fa-git {
+font-size: 4em;
+margin: 1rem;
+}
+.lang {
+  position: relative;
+}
+.lang-icon {
+  width: 70%;
+  margin: 0 auto;
+}
+.text-contents {
+  text-align: center;
+  margin-bottom: 0;
+  padding-left: 4rem;
+  padding-bottom: 4rem;
+  width: 80%;
+} 
+.text-active {
+  display: block;
+}
+
+
+/* footer */
+footer {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background: royalblue;
+  color: white;
+  padding: 5px 0 5px 5px;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+footer p {
+  padding: 1rem 0 1rem 1rem;
+}
+.fa-twitter-square{
+  color: white;
+  font-size: 2em;
+  margin: .5rem 1rem 1rem 1rem;
+}
+.fa-twitter-square:hover {
+  color: yellow;
+  font-size: 2.5rem;
+}
+
+
+
+@media (max-width: 1200px) {
+  .home-content {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .page-title {
+    font-size: 3.5rem;
+  }
+  .page-sentence {
+    font-size: 2rem;
+  }
+  .main-nav {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: black;
+  }
+  .about wrapper {
+    margin: 0 auto;
+  }
+  .about-content {
+    display: flex;
+    font-size: 1rem;
+    text-align: right;
+  } 
+  .my-image {
+    width: max-content;
+  }
+  .about-info {
+    width: max-content;
+  }
+  article {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .page-title {
+    font-size: 2.5rem;
+    margin: 0 auto;
+  }
+  .page-sentence {
+    font-size: 1rem;
+  }
+  .main-nav {
+    font-size: .5rem;
+    margin-top: 10px;
+  }
+  section {
+    margin-top: 70px;
+  }
+
+  @media (max-width: 550px) {
+    .works-info h2 {
+      font-size: 3rem;
+      font-weight: normal;
+      text-align: center;
+      padding-left: 4.5rem;
+    }
+    article,aside {
+      padding: 0;
+    }
+    
+  }
+}
+  
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
